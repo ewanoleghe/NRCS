@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Duke Fields</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Daniel Gimenez, Professor Stephanie Murphy, Dr Ewan Oleghe, Dr." />
+    <script src="libs/header-attrs-2.7/header-attrs.js"></script>
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/rutgers-fonts.css" rel="stylesheet" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-84972342-5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-84972342-5');
+    </script>
+    <link rel="stylesheet" href="libs/lyngs_style.css" type="text/css" />
+    <link rel="stylesheet" href="libs/cols.css" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap-grid.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" type="text/css" />
+    <link rel="stylesheet" href="libs/css/academicons.min.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+.row[
+.col-7[
+.title[
+###Duke Farms Carbon Project.
+]
+ 
+
+.subtitle[
+#### &lt;span style="color: red;"&gt;Duke Fields - Impact of land use and soil series on soil carbon stock&lt;/span&gt;
+##### Project update, 14 April 2021
+]
+.author[
+##### Daniel Gimenez, Professor.&lt;br/&gt;Stephanie Murphy, Dr.&lt;br/&gt;Ewan Oleghe, Dr.
+]
+
+.affiliation[
+##### Department of Environmental Sciences &lt;br&gt; Rutgers, The State University of New Jersey
+]
+
+]
+
+.col-5[
+
+.logo[
+&lt;img src="figures/df_1.jpeg" width="2133" /&gt;
+]
+&lt;br&gt;
+&lt;br&gt;
+---
+Slides:&lt;br&gt; 14 slides
+
+Data set:&lt;br&gt; [**AVAILABLE ON REQUEST**](#?)
+
+
+]
+
+]
+
+
+---
+class: center, middle
+
+### Part 1: Sampling
+
+---
+##### 1.1. Field Sampling
+  
+--
+###### 1.1.1.) ...  landuse
+  
+&lt;img src="map/df.png" width="70%" /&gt;
+
+---
+###### 1.1.2.) ...  and soil series
+  
+&lt;img src="map/sk1.png" width="75%" /&gt;
+---
+class: center, middle
+
+### Part 2. Summary &amp; Statistics
+
+
+---
+###### **Table 1:** Number of samples by landuse and soil series.
+Landuse     |number|&lt;-   |      |  Soil|series |    -&gt;|    |
+------------|-----|------|------|------|-------|------|------
+            |     | PeoC | PenB |KkoC  |KkoD   |PeoB  | RehB    
+Agriculture |333  |32    | 140  |143   |18     | -    | -   
+Grassland   |443	|56    | 201  |186   |  -    | -    | -   
+Forest      |206 	|  -   |  -   |  -   |  -    |97    |109  
+|           
+Total       |982	|  -   | -    | -    | -     | -    | -  
+
+
+---
+##### 2.2.) Summary statistics
+  
+###### (2.2.1.) Grassland - Skeet shoot field
+###### **Table 2:** Descriptive statistics total carbon (Total_C) and total nitrogen concentrations (Total_N).
+  &lt;!-- &lt;font size="-2"&gt; --&gt;
+  
+|           |     |Total N|        |      |                 |  |Total C|        |     |                  
+------------|-----|------|---------|------|-----------------|--|------|--------|-----|------------------
+            |     |      |(g/100g soil)|  |                 |  |      |(g/100g soil)|     |
+Soil series | n   | Min	 | Median  | Max  | Mean            |  |Min   | Median | Max | Mean            
+KkoC        |60 	|0.108 |	0.170	 |0.227 |0.172&lt;sup&gt;a&lt;/sup&gt;|  |0.975 |1.684   |2.360|1.673&lt;sup&gt;a &lt;/sup&gt;
+PenB        |65 	|0.094 |	0.161	 |0.310 |0.161&lt;sup&gt;a&lt;/sup&gt;|  |0.767 |1.556   |3.251|1.591&lt;sup&gt;a &lt;/sup&gt;
+PeoC        |25 	|0.099 |	0.141	 |0.189 |0.144&lt;sup&gt;b&lt;/sup&gt;|  |0.853 |1.364   |1.849|1.347&lt;sup&gt;b &lt;/sup&gt;
+
+&lt;!-- &lt;/font&gt; --&gt;
+###### a,b = means with the same letter are not significantly different from each other (P&gt;0.05 ANOVA followed by Tukey's honest significance test)
+---
+class: center, middle
+
+
+
+
+
+
+
+
+### Part 3. Spatial Study
+
+---
+###### 3.1.) **Compute undirected (isotropic) empirical semivariogram**
+  
+
+
+###### 3.1a.) **Compute undirected (isotropic) empirical semivariogram**
+  
+.pull-left[
+###### Grassland
+![](index_files/figure-html/unnamed-chunk-7-1.png)&lt;!-- --&gt;
+    
+]
+
+.pull-right[
+###### Agriculture
+![](index_files/figure-html/unnamed-chunk-8-1.png)&lt;!-- --&gt;
+]
+###### **Figure 1:** Undirected semivariogram of Total_C for Grassland and Agriculture fields. 
+
+---
+###### 3.2.) compute semivariogram model based on the empiral semivariogram
+  
+  
+
+
+
+  &lt;!-- --- #fit plot --&gt;
+###### 3.2.) Fit of theoretical semivariograms to those empirical semivariograms
+  
+.pull-left[
+###### Grassland
+![](index_files/figure-html/unnamed-chunk-10-1.png)&lt;!-- --&gt;
+    
+]
+
+.pull-right[
+###### Agriculture
+![](index_files/figure-html/unnamed-chunk-11-1.png)&lt;!-- --&gt;
+  
+]
+
+---
+  
+  &lt;!--  CONVERT THE DATAFRAME TO SPATIAL POINTS  --&gt;
+
+&lt;!-- --- # Create Kriging map for experimental area --&gt;
+  
+
+
+
+
+
+
+###### 3.3.) Scatterplot plot of total carbon concentration
+
+.pull-left[
+###### Grassland
+![](index_files/figure-html/unnamed-chunk-16-1.png)&lt;!-- --&gt;
+]
+
+.pull-right[
+###### Agriculture
+![](index_files/figure-html/unnamed-chunk-17-1.png)&lt;!-- --&gt;
+]
+
+![](index_files/figure-html/unnamed-chunk-18-1.png)&lt;!-- --&gt;
+
+
+```
+##   model     psill    range
+## 1   Nug 0.1209173  0.00000
+## 2   Exp 0.3212478 41.03518
+```
+
+
+```
+## [using ordinary kriging]
+```
+
+
+```
+## [using ordinary kriging]
+```
+
+---
+  
+###### 3.4.) Kriging &amp; Predict total carbon content for each field using ordinary kriging
+
+
+###### Grassland: Predicted map for soil total carbon
+    
+![](index_files/figure-html/unnamed-chunk-22-1.png)&lt;!-- --&gt;
+
+
+
+
+---
+
+#### Next Phase 
+  
+--
+###### Estimate the vertical distribution of organic carbo to bedrock or maximum penetration depth
+  
+--
+###### Estimate the number of samples baased on the semivariogram to estimate a field
+  
+--
+###### Estimate the impact of landuse and soil types on aggregate stability
+  
+--
+###### CAST model
+  
+  
+  
+---
+class: center, middle
+
+# That's all for today
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="libs/remark-latest.min.js"></script>
+<script src="https://platform.twitter.com/widgets.js"></script>
+<script src="libs/cols_macro.js"></script>
+<script>var slideshow = remark.create({
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "10:6",
+"navigation": {
+"scroll": false
+}
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+<script>
+(function() {
+  var divHTML = document.querySelectorAll(".details-open");
+  divHTML.forEach(function (el) {
+    var preNodes = el.getElementsByTagName("pre");
+    var outputNode = preNodes[1];
+    outputNode.outerHTML = "<details open class='output'><summary>Output</summary>" + outputNode.outerHTML + "</details>";
+  })
+})();
+(function() {
+  var divHTML = document.querySelectorAll(".details");
+  divHTML.forEach(function (el) {
+    var preNodes = el.getElementsByTagName("pre");
+    var outputNode = preNodes[1];
+    outputNode.outerHTML = "<details class='output'><summary>Output</summary>" + outputNode.outerHTML + "</details>";
+  })
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
